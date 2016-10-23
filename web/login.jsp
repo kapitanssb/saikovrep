@@ -11,11 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-        <title>Вход на мой сайт</title>
+        <title>Вход на сайт</title>
     </head>
     <body>
         <img src="../герб.PNG" width="296" height="327" alt="герблог"/>
-        <h1>Вход на мой сайт</h1>
+        <h1>Вход на сайт</h1>
         <form action="j_security_check" method="POST">
             <table border="0">
                 <tbody>
