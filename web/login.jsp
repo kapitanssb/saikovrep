@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-        <title>Вход на сайт</title>
+        <title>Вход на мой сайт</title>
     </head>
     <body>
         <img src="../герб.PNG" width="296" height="327" alt="герблог"/>
