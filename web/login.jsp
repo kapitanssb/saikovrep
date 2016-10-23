@@ -15,7 +15,7 @@
     </head>
     <body>
         <img src="../герб.PNG" width="296" height="327" alt="герблог"/>
-        <h1>Вход на сайт</h1>
+        <h1>Вход на мой сайт</h1>
         <form action="j_security_check" method="POST">
             <table border="0">
                 <tbody>
