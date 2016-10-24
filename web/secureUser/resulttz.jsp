@@ -19,6 +19,8 @@
                 width: 800; /* Ширина таблицы */
                 border: 0px double black; /* Рамка вокруг таблицы */
                 border-collapse: collapse; /* Отображать только одинарные линии */
+                foht-family: "Times New Roman"  serif;
+                font-size: 20px;
             }
 
         </style>
