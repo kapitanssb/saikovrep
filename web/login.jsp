@@ -20,12 +20,12 @@
             <table border="0">
                 <tbody>
                     <tr>
-                        <td><p align="right"> Имя пользователя :</p></td>
-                        <td><p align="center"><input type="text" name="j_username"></p></td>
+                        <td align="right"> Имя пользователя :</td>
+                        <td align="center"><input type="text" name="j_username"></td>
                     </tr>
                     <tr>
-                        <td><p align="right"> Пароль :</p></td>
-                        <td><p align="center"><input type="password" name="j_password"></p></td>
+                        <td align="right"> Пароль :</td>
+                        <td align="center"><input type="password" name="j_password"></td>
                     </tr>
                 </tbody>
             </table>
