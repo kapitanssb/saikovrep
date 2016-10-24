@@ -35,7 +35,7 @@
             <tr><td align="center"><strong>ТЕХНИЧЕСКОЕ ЗАДАНИЕ</strong><br>
                     на разработку проекта по титулу:<br><br>
                     <strong>"<% out.print(request.getParameter("TITUL"));%>"</strong><br>
-                    по адресу: МО,Серпуховский р-н, д. 
+                    по адресу: МО,Серпуховский р-н, 
                     <% out.print(request.getParameter("PUNKT"));%><br></td></tr>
         </table>
 
@@ -48,7 +48,7 @@
                 <td align="left"><strong>1.1 Основание для проектирования.</strong></td>
                 <td align="left">Инвестиционная программа Южных электрических сетей,
                     ТУ <% out.print(request.getParameter("TUNOMER"));%> от
-                    <% out.print(request.getParameter("TUDATA"));%></td>
+                    <% out.print(request.getParameter("TUDATA"));%> г.</td>
             </tr>
             <tr>
                 <td align="left"><strong>1.2 Заказчик</strong></td>
@@ -70,7 +70,7 @@
                 <td align="left"><strong>1.6 Назначение проектируемого объекта</strong></td>
                 <td align="left">Электроснабжение <% out.print(request.getParameter("OBJECTSTR"));%>
                     <% out.print(request.getParameter("ZAKAZCHIK"));%><br>
-                    по адресу: МО, Серпуховский р-н, д.<% out.print(request.getParameter("PUNKT"));%></td>
+                    по адресу: МО, Серпуховский р-н, <% out.print(request.getParameter("PUNKT"));%></td>
             </tr>
             <tr>
                 <td align="left"><strong>1.7 Особые условия строительства</strong></td>
@@ -88,6 +88,8 @@
                         String tempvar = "";
                         //Что строим? Либо ВЛИ-0,4 кВ, либо КЛ-0,4 кВ
                         String w_project = request.getParameter("WHATPROJECT");
+                        //К чему присоединяемся? К ВЛИ/КЛ
+                        String w_connect = request.getParameter("WHATCONNECT");
                         // ВЛТ или КЛ существует? Либо существующая, либо проектируемая
                         String absent = request.getParameter("ABSENT");
                         //Тип КТП
@@ -102,18 +104,33 @@
                         if (w_project.equals("ВЛИ")) {
                             //Строим ВЛИ
                             objem = "Выполнить строительство отпайки ВЛИ-0,4 кВ от ";
-                            tempvar = "ВЛИ-0,4 кВ ";
+                            //tempvar = "ВЛИ-0,4 кВ ";
                         } else {
                             //Строим КЛ
                             objem = "Выполнить строительство КЛ-0,4 кВ от ";
-                            tempvar = "КЛ-0,4 кВ ";
+                            //tempvar = "КЛ-0,4 кВ ";
+                        }
+                        if(w_connect.equals("ВЛИ")){
+                            //К ВЛИ
+                            tempvar = "ВЛ-0,4 кВ";
+                        }else{
+                            //К КЛ или РУ
+                            if(w_connect.equals("РУ")){
+                                tempvar = " РУ-0,4 кВ ";
+                            }else{
+                                tempvar = "КЛ-0,4 кВ";
+                            }
                         }
                         if (absent.equals("СУЩ")) {
                             //от существующей
                             objem = objem + "существующей " + tempvar;
                         } else {
                             //от проектируемой
-                            objem = objem + "проектируемой " + tempvar;
+                            if (absent.equals("ПРОЕКТ")){
+                                objem = objem + "проектируемой " + tempvar;
+                            } else{
+                                objem = objem + tempvar;
+                            }
                         }
                         if (inventar.isEmpty()) {
                             //Инвентарный номер не набран, значит его нет
@@ -126,7 +143,7 @@
                             objem = objem + ", " + tptype + "-" + tpnumber
                                     + " до участка заявителя " + distance + " км";
                         } else {
-                            objem = objem + " до участка заявителя " + distance + " км";
+                            objem = objem + " до участка заявителя - " + distance + " км";
                         }
                         //Выводим объем в таблицу
                         out.print(objem);
@@ -155,7 +172,7 @@
                 <td align="left"><strong>2.2 Технологические решения и выбор оборудования</strong></td>
                 <td align="left"><strong>ВЛИ-0,4 кВ</strong><br>
                     1.1 Применяемый провод <% out.print(request.getParameter("SIP"));%> мм2<br>
-                    1.2 Линейная арматура тип - "нилед"<br>
+                    1.2 Линейная арматура тип - "Нилед"<br>
                     1.3 Количество анкерных и промежуточных опор определить проектом.<br>
                     1.4 В проекте предусмотреть подвеску дополнительного провода для уличного освещения. 
                     Объем работ по уличному освещению в сметы не включать.<br>
