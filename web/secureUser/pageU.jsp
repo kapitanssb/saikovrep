@@ -47,7 +47,10 @@
                 myResultSet.close();
             }
 %>--%>
-        <a href="tz.jsp">Техническое задание</a>
-        
+        <a href="tz.jsp">Техническое задание</a><br>
+        <a href="../Excel/test_ru.xlsx" download>Скачать ИП файл...</a><br>
+        <a href="../Excel/test_ru.htm" >Просмотреть ИП файл в броузере...</a><br>
+        <a href="../Excel/ДокументVisio.htm" >Просмотреть ДОКУМЕНТ VISIO файл в броузере...</a>
+      
     </body>
 </html>
