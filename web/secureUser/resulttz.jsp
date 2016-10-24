@@ -23,6 +23,8 @@
                 font-size: 20px;
             }
 
+            
+            
         </style>
     </head>
     <body>
@@ -299,8 +301,11 @@
                 <td align="right">____________________/_________/</td>
             </tr>  
         </table>
+        
+        
 
-        <button onclick="window.print();">Печать</button>       
+    <button onclick="window.print();">Печать</button>
+               
 
     </body>
 </html>
