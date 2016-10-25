@@ -51,7 +51,12 @@
         <p><a href="../datas/ip/ip.xlsx" download>Скачать ИП файл...</a><br>
             <a href="../datas/ip/ip.htm" >Просмотреть ИП файл в броузере...</a>
         </p>
-       
-      <a href="../datas/shemas/ВЛ-0,4 кВ с БМКТП-603 Липицы.pdf" >ВЛ-0,4 кВ с БМКТП-603 Липицы...</a>
+        Поопорные схемы:
+        <a href="../secureUser/schemas/vl610.jsp">ВЛ 6-10 кВ...</a>
+        <a href="../secureUser/schemas/vl04.jsp">ВЛ-0,4 кВ...</a>
+        <a href="../secureUser/schemas/ztprp.jsp">ЗТП, РП...</a>
+        <a href="../secureUser/schemas/mtpktp.jsp">МТП, КТП...</a>
+        <a href="../secureUser/schemas/obolensk.jsp">Оболенск...</a>
+        <%--<a href="../datas/shemas/ВЛ-0,4 кВ с БМКТП-603 Липицы.pdf" >ВЛ-0,4 кВ с БМКТП-603 Липицы...</a>--%>
     </body>
 </html>
