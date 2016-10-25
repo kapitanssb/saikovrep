@@ -88,6 +88,7 @@
                         //Java script форимирования объема строительства ЛОГИКА НЕ ДОПИЛЕНА!!!!НЕТ ПРОВЕРОК!!!!
                         String objem = "";
                         String tempvar = "";
+                        String tempvar1 = "";
                         //Что строим? Либо ВЛИ-0,4 кВ, либо КЛ-0,4 кВ
                         String w_project = request.getParameter("WHATPROJECT");
                         //К чему присоединяемся? К ВЛИ/КЛ
@@ -106,11 +107,11 @@
                         if (w_project.equals("ВЛИ")) {
                             //Строим ВЛИ
                             objem = "Выполнить строительство отпайки ВЛИ-0,4 кВ от ";
-                            //tempvar = "ВЛИ-0,4 кВ ";
+                            tempvar1 = "ВЛИ-0,4 кВ ";
                         } else {
                             //Строим КЛ
                             objem = "Выполнить строительство КЛ-0,4 кВ от ";
-                            //tempvar = "КЛ-0,4 кВ ";
+                            tempvar1 = "КЛ-0,4 кВ ";
                         }
                         if(w_connect.equals("ВЛИ")){
                             //К ВЛИ
@@ -167,12 +168,12 @@
                 <td colspan="2" align="center" ><strong>2. ОСНОВНЫЕ ТРЕБОВАНИЯ К ПРОЕКТНЫМ РЕШЕНИЯМ</strong></td>
             </tr>
             <tr>
-                <td align="left"><strong>2.1 Архитектурно-планировочные регения</strong></td>
+                <td align="left"><strong>2.1 Архитектурно-планировочные решения</strong></td>
                 <td align="left">Не требуется.</td>
             </tr>
             <tr>
                 <td align="left"><strong>2.2 Технологические решения и выбор оборудования</strong></td>
-                <td align="left"><strong>ВЛИ-0,4 кВ</strong><br>
+                <td align="left"><strong><%=tempvar1%> :</strong><br>
                     1.1 Применяемый провод <% out.print(request.getParameter("SIP"));%> мм2<br>
                     1.2 Линейная арматура тип - "Нилед"<br>
                     1.3 Количество анкерных и промежуточных опор определить проектом.<br>

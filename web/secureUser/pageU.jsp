@@ -47,10 +47,11 @@
                 myResultSet.close();
             }
 %>--%>
-        <a href="tz.jsp">Техническое задание</a><br>
-        <a href="../Excel/test_ru.xlsx" download>Скачать ИП файл...</a><br>
-        <a href="../Excel/test_ru.htm" >Просмотреть ИП файл в броузере...</a><br>
-        <a href="../Excel/ДокументVisio.htm" >Просмотреть ДОКУМЕНТ VISIO файл в броузере...</a>
-      
+        <p><a href="tz.jsp">Техническое задание</a></p><br>
+        <p><a href="../datas/ip/ip.xlsx" download>Скачать ИП файл...</a><br>
+            <a href="../datas/ip/ip.htm" >Просмотреть ИП файл в броузере...</a>
+        </p>
+       
+      <a href="../datas/shemas/ВЛ-0,4 кВ с БМКТП-603 Липицы.pdf" >ВЛ-0,4 кВ с БМКТП-603 Липицы...</a>
     </body>
 </html>
