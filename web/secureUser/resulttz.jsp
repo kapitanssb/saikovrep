@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" href="../favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-        <title>JSP Page</title>
+        <title>Техническое задание </title>
 
         <style>
             table { 
@@ -21,6 +21,7 @@
                 border-collapse: collapse; /* Отображать только одинарные линии */
                 foht-family: "Times New Roman"  serif;
                 font-size: 20px;
+                
             }
 
             
