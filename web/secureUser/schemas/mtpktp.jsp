@@ -9,10 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+        <title>Список схем МТП,КТП</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Список схем МТП,КТП</h1>
         <a href="../shem/mtpktp/БКТП-475 Борисово.pdf" >БКТП-475 Борисово...</a><br>
         <a href="../shem/mtpktp/БКТП-75 Прилуки.pdf" >БКТП-75 Прилуки...</a><br>
         <a href="../shem/mtpktp/БМКТП-5 Дашковка.pdf" >БМКТП-5 Дашковка...</a><br>

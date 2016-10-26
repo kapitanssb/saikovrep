@@ -9,9 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+        <title>Список электроустановок в Оболенске</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Список электроустановок в Оболенске</h1>
     </body>
 </html>

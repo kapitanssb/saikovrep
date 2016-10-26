@@ -9,10 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+        <title>Список линий ВЛ-6-10 кВ</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Список линий ВЛ-6-10 кВ</h1>
         <a href="../shem/vl610/ВЛ-6 кВ ф На ТП-362 266 с ТП-305.pdf" >ВЛ-6 кВ ф. На ТП-362,266 с ТП-305...</a><br>
         <a href="../shem/vl610/ВЛ-6 кВ ф.3 с ПС-217.pdf" >ВЛ-6 кВ ф.3 с ПС-217...</a><br>
         <a href="../shem/vl610/ВЛ-6 кВ ф.3 с ПС-273.pdf" >ВЛ-6 кВ ф.3 с ПС-273...</a><br>
