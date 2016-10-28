@@ -9,8 +9,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
         <title>Список линий ВЛ-6-10 кВ</title>
     </head>
