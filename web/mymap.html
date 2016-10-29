@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Карта</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+        <script type="text/javascript">
+            // Создает обработчик события window.onLoad
+            YMaps.jQuery(function () {
+                // Создает экземпляр карты и привязывает его к созданному контейнеру
+                var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+                // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+                map.setCenter(new YMaps.GeoPoint(37.41, 54.91), 10);
+                map.setType(YMaps.MapType.HYBRID);
+                map.addControl(new YMaps.TypeControl());
+                map.addControl(new YMaps.ToolBar());
+                map.addControl(new YMaps.Zoom());
+                map.addControl(new YMaps.ScaleLine());
+                //map.enableScrollZoom(); не работает    
+                //map.enableMagnifier(); работает
+
+                var SearchControl = new YMaps.SearchControl({
+                    resultsPerPage: 5, // Количество объектов на странице
+                    useMapBounds: 1     // Объекты, найденные в видимой области карты 
+                            // будут показаны в начале списка
+                });
+                map.addControl(new YMaps.SearchControl());
+
+            })
+        </script>
+    </head>
+
+    <body>
+        <div id="YMapsID" style="width:600px;height:400px"></div>
+    </body>
+
+</html>
