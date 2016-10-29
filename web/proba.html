@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Карта</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap;
+
+            function init() {
+                myMap = new ymaps.Map("map", {
+                    center: [54.91, 37.41],
+                    zoom: 11
+                            //type: 'HYBRID'
+                });
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="map" style="width: 600px; height: 400px"></div>
+    </body>
+</html>

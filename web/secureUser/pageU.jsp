@@ -59,6 +59,7 @@
         <a href="../secureUser/schemas/obolensk.jsp">Оболенск...</a>
         <%--<a href="../datas/shemas/ВЛ-0,4 кВ с БМКТП-603 Липицы.pdf" >ВЛ-0,4 кВ с БМКТП-603 Липицы...</a>--%>
         <br>
-        <a href="../mymap.html">Карта</a>
+        <%--<a href="../mymap.html">Карта</a>--%>
+        <a href="../proba.html">Карта</a>
     </body>
 </html>
