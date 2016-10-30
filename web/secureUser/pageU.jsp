@@ -60,6 +60,8 @@
         <%--<a href="../datas/shemas/ВЛ-0,4 кВ с БМКТП-603 Липицы.pdf" >ВЛ-0,4 кВ с БМКТП-603 Липицы...</a>--%>
         <br>
         <%--<a href="../mymap.html">Карта</a>--%>
-        <a href="../proba.html">Карта</a>
+        <p><a href="../proba.html">Карта</a></p>
+       
+        <p><a href="findps.jsp">Поиск ПС на карте</a></p>
     </body>
 </html>
