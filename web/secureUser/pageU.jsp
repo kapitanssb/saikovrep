@@ -24,29 +24,7 @@
         <br>
         <h4>Список задач для пользователя :</h4>
         <br>
-        <%--
-<h1>Будем пытаться соединиться с БД MySQL</h1>
-        <h4>БД MySQL, называется voprosydb, таблица называется mytable1</h4>
-        <%
-            DbManager db = new DbManager();
-            Connection conn = db.getConnection();
-            if (conn == null) {
-                //Не удачно
-                out.print("Соединение с БД прошло не удачно! Все очень херово!");
-                //System.exit(-100);
-            } else {
-                //Все хорошо
-                out.println("Соединение с БД удачно! Все зачепись!");
-                Statement myStatement = conn.createStatement();
-                ResultSet myResultSet = myStatement.executeQuery("select * from mytable1");
-                while (myResultSet.next()) {
-                    out.println(myResultSet.getString("vopros") + " ответ " + myResultSet.getString("otvet"));
-                    out.println("/r/n");
-                    //out.append("ssss");
-                }
-                myResultSet.close();
-            }
-%>--%>
+        
         <p><a href="tz.jsp">Техническое задание</a></p><br>
         <p><a href="../datas/ip/ip.xlsx" download>Скачать ИП файл...</a><br>
             <a href="../datas/ip/ip.htm" >Просмотреть ИП файл в броузере...</a>

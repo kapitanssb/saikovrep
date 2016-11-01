@@ -17,7 +17,7 @@ public class DbManager {
        public Connection getConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/voprosydb", "root", "root");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ipmoesk", "root", "root");
             //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/voprosydb", "kapitanssb", "ssbkapitan");
             return conn;
         } catch (ClassNotFoundException e) {

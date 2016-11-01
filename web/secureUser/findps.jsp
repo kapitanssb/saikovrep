@@ -6,6 +6,10 @@
 
 
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="test.DbManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -48,6 +52,26 @@
         <input type="submit" onclick="myclick()" value="Поиск" name="findbutton" />
         
         <%--Далее мы должны получить введенные данные--%>
+        <%
+            DbManager db = new DbManager();
+            Connection conn = db.getConnection();
+            if (conn == null) {
+                //Не удачно
+                out.print("Соединение с БД прошло не удачно! Все очень херово!");
+                //System.exit(-100);
+            } else {
+                //Все хорошо
+                out.println("Соединение с БД удачно! Все зачепись!");
+                Statement myStatement = conn.createStatement();
+                ResultSet myResultSet = myStatement.executeQuery("select * from new_table");
+                while (myResultSet.next()) {
+                    out.println(myResultSet.getString("name") + " ----- " + myResultSet.getString("city") + "<BR>");
+                    //out.println("/r/n");
+                    //out.append("ssss");
+                }
+                myResultSet.close();
+            }
+%>
 
     </body>
 </html>
