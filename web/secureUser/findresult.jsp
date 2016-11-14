@@ -76,8 +76,8 @@
                 var jstest = "test";
 
                 myMap = new ymaps.Map("map", {
-                    center: [55.76, 37.64],
-                    zoom: 7
+                    center: [54.91815769961256, 37.413348134092004],
+                    zoom: 12
                 });
 
 
@@ -89,10 +89,11 @@
                 step2 = 1;
                 for (var i = 0; i < rowcount; i++) {//Перебираем всю таблицу
                     coordan = document.getElementsByTagName('td')[step].innerHTML;
-                    coorda = coordan.replace(",", ".");
+                    var m = Math.pow(10, 4);
+                    coorda = Math.round((coordan.replace(",", ".") * m)) / m;
                     step = step + 5;
                     coordbn = document.getElementsByTagName('td')[step1].innerHTML;
-                    coordb = coordbn.replace(",", ".");
+                    coordb = Math.round((coordbn.replace(",", ".") * m)) / m;
                     step1 = step1 + 5;
                     name = document.getElementsByTagName('td')[step2].innerHTML;
                     step2 = step2 + 5;
@@ -103,8 +104,6 @@
                     });
                     myMap.geoObjects.add(myPlacemark);
                 }
-
-
             }</script>
 
 

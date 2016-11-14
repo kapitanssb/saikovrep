@@ -26,7 +26,7 @@
             <table border="0">
                 <tbody>
                     <tr>
-                        <td align="right">Введите номер ТП :</td>
+                        <td align="right">Введите номер ТП или буквы населенного пункта :</td>
                         <td align="center"><input type="text" name="numbertp" value="" /></td>
                     </tr>
                 </tbody>
